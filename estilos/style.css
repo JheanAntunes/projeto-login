@@ -34,7 +34,7 @@ section#login{
     transform: translate(-50%,-50%);
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     overflow: hidden; /*Esse elemento faz o que estiver fora da border não seja exibido, não mostre.*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
@@ -64,5 +64,53 @@ div#formulario > h1{
 
 div#formulario > p{
     font-size: 0.8em;
-    
+
+}
+
+form > div.campo{
+    background-color: #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+form > input[type=submit]:hover{
+    background-color: #88b988;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #7af87a;
+    border: 1px solid #7af87a;
+    color: #438b43;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao > span{
+    font-size: 0.8em;
 }
