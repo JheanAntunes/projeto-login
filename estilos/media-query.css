@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*
+    Typical device Breakpoints
+---------------------------------------
+Pequenas: Telas até 600px, feita, porque utilizamos a tecnica de mobile first
+Celular de 600 até 768px,  feita, porque utilizamos a tecnica de mobile first
+Table: 768px até 992px, Precisamos fazer a media query para essa versão de dispositivo, fazer nesse link css...
+Desktop: 922px até 1220px, Precisamos também fazer uma media query para computadores e notebooks
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 769px) and (max-width: 993px) {
+    body, html{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    
+    section#login{
+        width: 80vw;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 65%;
+    }
+}
+
+
+@media screen and (min-width: 994px){
+     
+    body, html{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    
+    section#login{
+        width: 950px;
+     }
+
+     section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+     }
+
+     section#login > div#formulario{
+        float: right;
+        width: 50%;
+        height: 100%;
+     }
+}
